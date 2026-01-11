@@ -51,4 +51,4 @@ def main():
     app = Application.builder().token(TOKEN).build()
     job_queue = app.job_queue
     # সময় সেট করা (সকাল ৮টা)
-    job_queue.run_daily(send_good_morning, time=datetime.time(hour=8, minute=0, second
+    job_queue.run_daily(send_good_morning, time=datetime.time(hour=8, minute=0, second=0))
